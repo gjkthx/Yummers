@@ -10,7 +10,7 @@ const express = require('express')
 const { AUTH_DOMAIN, AUTH_CLIENT_ID, AUTH_CLIENT_SECRET, AUTH_CALLBACK_URL, CONNECTION_STRING, API_KEY } = process.env;
 
 const app = express();
-
+app.use( express.static( `${__dirname}/../build` ) );
 app.use(bodyParser.json());
 
 app.use(session({
@@ -73,10 +73,12 @@ app.get('/auth/callback', function (req, res, next) {
     // console.log('callback')
     next()
 }, passport.authenticate('auth0', {
-    successRedirect: `${process.env.LOCALHOST}`,
-        // 'http://localhost:3000/',
-    failureRedirect: `id${process.env.LOCALHOST}`
-    // 'idhttp://localhost:3000/'
+    successRedirect: 
+        'http://localhost:3000/',
+        // `${process.env.LOCALHOST}`,
+    failureRedirect: 
+    'idhttp://localhost:3000/'
+    // `id${process.env.LOCALHOST}`
 }))
 
 app.get('/auth/me', (req, res, next) => {
