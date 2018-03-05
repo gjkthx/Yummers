@@ -1,0 +1,70 @@
+.recipe_tile{
+    /* background-color: blueviolet; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* margin: 0 auto 0 auto; */
+    height:220px;
+    width:200px;
+    /* margin: 15px; */
+    /* z-index: 1; */
+    /* align-content: center; */
+    margin: 12px 7px;
+    /* z-index: 1; */
+    
+}
+.recipe_tile_top{
+    height: 25px;
+    width:200px;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: -20px;
+    /* background-color: burlywood; */
+    z-index: 1;
+
+}
+.recipe_tile_pic{
+    background-color: white;
+    text-align: center;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    height: 140px;
+    width:140px;
+    border-radius: 50%;
+    margin: 10px auto 0 auto;
+    z-index: -1;
+}
+.searchFooter{
+    align-content: center
+}
+.recipe_tile_rank{
+    /* background-color: rgb(233, 231, 71); */
+    background-image: url('./medal.svg');
+    color: rgb(0, 0, 0);
+    height:50px;
+    background-position: center;
+    background-repeat: no-repeat;
+    width:50px;
+    font-size: .7rem;
+    line-height: 245%;
+    /* margin-left: -10%; */
+    text-align: center;
+    z-index: 1;
+
+}
+.recipe_tile_title{
+    display:flex;
+    /* background-color: aquamarine; */
+    font-family: 'Halant', serif;
+    font-size: 1rem;
+    text-align: center;
+    justify-content: center;
+    overflow-wrap: break-word; 
+    margin-top: 8px;
+    /* margin-left: 12%; */
+}
+/* font-family: 'Fredericka the Great', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Halant', serif; */

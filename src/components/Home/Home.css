@@ -1,0 +1,68 @@
+.loginButton{
+    width: 70px;
+    height: 25px;
+    background-color:#c1cc89;
+    font-family: 'Playfair Display', serif;
+    font-size: .9rem;
+    border-width: 1px;
+    border-color: black;
+    margin:0 5px 3vh 0;
+    box-shadow: 1px 2px .5px 	rgb(119, 126, 85);
+    justify-content: center;
+    display: flex;
+    border-radius:10px;
+    background-image: radial-gradient(circle at 50%-46%,#ceda95, #c1cc89);
+    border-style: solid;
+}
+.logoutButton{
+    width: 70px;
+    margin-top:100px;
+    height: 3vh;
+    /* background-color:#d9a88f; */
+    font-family: 'Playfair Display', serif;
+    font-size: .9rem;
+    border-width: 1px;
+    border-color: black;
+    margin:0 5px;
+    box-shadow: 1px 2px .5px 	rgb(138, 106, 90);
+    justify-content: center;
+    display: flex;
+    border-radius:10px;
+    background-image: radial-gradient(circle at 50%-46%,#e3c3b3, #d9a88f);
+    
+}
+.homeLoginHeader{
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+.homeWelcome{
+    flex-direction: column;
+    justify-content: center;
+    width:100%;
+    /* display: flex; */
+    height:10vh;
+    text-align: center;
+
+}
+.homeTitle{
+    font-family: 'Playfair Display', serif;
+}
+.homeUnderTitle{
+    font-family: 'Halant', serif;
+    font-size: .6em;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+/* font-family: 'Fredericka the Great', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Halant', serif; */
+
+@media only screen and (min-width: 0px) {
+    
+    
+}

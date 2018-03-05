@@ -1,0 +1,347 @@
+.searchResultsHolder{
+    height: 65vh;
+    width: 110%;
+    /* background-color: aquamarine; */
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    overflow-y: scroll; 
+    justify-content: space-between;
+    margin-left: -5%;
+}
+.searchSearchHolder{
+    margin-top: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center
+
+}
+.searchButton{
+    width: 70px;
+    height: 4vh;
+    /* background-color:#c1cc89; */
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    border-width: 1px;
+    border-color: black;
+    margin:0 5px;
+    box-shadow: 2px 1px .5px 	rgb(119, 126, 85);
+    border-radius: 3px;
+    background-image: radial-gradient(circle at 50%-46%,#ceda95, #c1cc89);
+}
+.searchInput{
+    width: 275px;
+    height: 4vh;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    border-width: 1px;
+    border-color: black;
+    /* background-color: #d9a88f; */
+    margin:0 5px;
+    box-shadow: 2px 1px .5px 	rgb(130, 130, 130);
+    border-radius: 3px;
+}
+.resetButton{
+    width: 70px;
+    height: 4vh;
+    background-color:#aebbc7;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    border-width: 1px;
+    border-color: black;
+    margin:0 5px;
+    box-shadow: 2px 1px .5px 	rgb(118, 128, 136);
+    border-radius: 3px;
+}
+.trendingButton{
+    margin:0 5px;
+    width: 95px;
+    height: 4vh;
+    /* background-color:#eac3b8; */
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    border-width: 1px;
+    border-color: black;
+    box-shadow:  2px 1px .5px 	rgb(130, 109, 103);
+    background-image: radial-gradient(circle at 50%-46%,#f2cbc0, #eac3b8);
+    border-radius: 3px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+
+}
+.prevButton{
+    margin:0 20px 0 20px;
+    width: 80px;
+    height: 4vh;
+    background-color:rgb(217,168,143);
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    border-width: 1px;
+    border-color: black;
+    box-shadow:  2px 1px .5px 	rgb(148, 115, 99);
+    border-radius: 3px;
+    
+}
+.nextButton{
+    margin: 0 20px 0 20px;
+    width: 80px;
+    height: 4vh;
+    background-color:#d2be96;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    border-width: 1px;
+    border-color: black;
+    box-shadow:  2px 1px .5px 	rgb(210,190,150);
+    border-radius: 3px;
+}
+.searchFooter{
+    display: flex;
+    margin-top: 2vh;
+    margin-bottom: 4vh;
+    justify-content: center;
+}
+.noResults{
+    text-align: center;
+    margin-top: 5vh;
+    width:100%;
+}
+
+@media (max-width: 920px) {
+    
+    .searchSearchHolder{
+        width:150%;
+        height:60vh;
+        flex-direction: column;
+        margin:0 auto 2vh -14vw; 
+        justify-content: center;
+    }
+    .ssButtonHolder{
+        display: flex;
+        flex-direction: row;
+        margin-top:3vh;
+        margin-left: -8vw;
+        margin-bottom: 2vh;
+        justify-content: space-around;
+        /* background-color: darkcyan; */
+        height: 8vh;
+        width:50%;
+        margin: 0 auto 0 auto; 
+    }
+   
+    .searchFooter{
+        /* background-color: darkorange; */
+        height:4vh;
+        margin: 2 0 2vh 0;
+        display: flex;
+        justify-content: center
+    }
+    .prevButton{
+        margin:0 20px 0 20px;
+        width: 80px;
+        height: 25px;
+        background-color:rgb(217,168,143);
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        border-width: 1px;
+        border-color: black;
+        box-shadow:  2px 1px .5px 	rgb(148, 115, 99);
+        border-radius: 3px;
+        
+    }
+    .nextButton{
+        margin: 0 20px 0 20px;
+        width: 80px;
+        height: 25px;
+        background-color:#d2be96;
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        border-width: 1px;
+        border-color: black;
+        box-shadow:  2px 1px .5px 	rgb(210,190,150);
+        border-radius: 3px;
+    }
+    .ssButtonHolder{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .searchInput{
+        width: 80%;
+        height: 50px;
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        border-width: 1px;
+        border-color: black;
+        /* background-color: #d9a88f; */
+        margin:0 auto 1vh auto;
+        box-shadow: 2px 1px .5px 	rgb(130, 130, 130);
+        border-radius: 3px;
+    }
+    .trendingButton{
+        margin:0 5px;
+        width: 90px;
+        height: 25px;
+        /* background-color:#eac3b8; */
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        border-width: 1px;
+        border-color: black;
+        box-shadow:  2px 1px .5px 	rgb(130, 109, 103);
+        background-image: radial-gradient(circle at 50%-46%,#f2cbc0, #eac3b8);
+        border-radius: 3px;
+        text-align: center;
+    }
+    .resetButton{
+        width: 70px;
+        height: 25px;
+        background-color:#aebbc7;
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        border-width: 1px;
+        border-color: black;
+        margin:0 5px;
+        box-shadow: 2px 1px .5px 	rgb(118, 128, 136);
+        border-radius: 3px;
+    }
+    .searchSearchHolder{
+        /* background-color: deeppink; */
+        display: flex;
+        flex-direction: column;
+        height:8vh;    
+    }
+    .searchButton{
+        width: 70px;
+        height: 25px;
+        /* background-color:#c1cc89; */
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        border-width: 1px;
+        border-color: black;
+        margin:0 5px;
+        box-shadow: 2px 1px .5px 	rgb(119, 126, 85);
+        border-radius: 3px;
+        background-image: radial-gradient(circle at 50%-46%,#ceda95, #c1cc89);
+    }
+}
+@media (max-width: 640px) {
+    .searchResultsHolder{
+        height: 65vh;
+        width: 130%;
+        margin: 0 0 0 -7vw;
+    }
+    .prevButton{
+        margin:0 20px 0 20px;
+        width: 80px;
+        height: 25px;
+        background-color:rgb(217,168,143);
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        border-width: 1px;
+        border-color: black;
+        box-shadow:  2px 1px .5px 	rgb(148, 115, 99);
+        border-radius: 3px;
+        
+    }
+    .nextButton{
+        margin: 0 20px 0 20px;
+        width: 80px;
+        height: 25px;
+        background-color:#d2be96;
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        border-width: 1px;
+        border-color: black;
+        box-shadow:  2px 1px .5px 	rgb(210,190,150);
+        border-radius: 3px;
+    }
+    .ssButtonHolder{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-bottom: 3vh;
+        margin-top:2vh;
+    }
+    .searchInput{
+        width: 100%;
+        height: 25px;
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        border-width: 1px;
+        border-color: black;
+        /* background-color: #d9a88f; */
+        margin:0 0 0 0;
+        box-shadow: 2px 1px .5px 	rgb(130, 130, 130);
+        border-radius: 3px;
+    }
+    .trendingButton{
+        margin:0 5px;
+        width: 90px;
+        height: 25px;
+        /* background-color:#eac3b8; */
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        border-width: 1px;
+        border-color: black;
+        box-shadow:  2px 1px .5px 	rgb(130, 109, 103);
+        background-image: radial-gradient(circle at 50%-46%,#f2cbc0, #eac3b8);
+        border-radius: 3px;
+        text-align: center;
+    }
+    .resetButton{
+        width: 70px;
+        height: 25px;
+        background-color:#aebbc7;
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        border-width: 1px;
+        border-color: black;
+        margin:0 5px;
+        box-shadow: 2px 1px .5px 	rgb(118, 128, 136);
+        border-radius: 3px;
+    }
+    .searchSearchHolder{
+        /* background-color: deeppink; */
+        display: flex;
+        flex-direction: column;
+        height:15vh;
+        margin-left:-15vw;
+       
+        margin-bottom: 2vh;
+    }
+    .searchButton{
+        width: 70px;
+        height: 25px;
+        /* background-color:#c1cc89; */
+        font-family: 'Playfair Display', serif;
+        font-size: 1rem;
+        border-width: 1px;
+        border-color: black;
+        margin:0 5px;
+        box-shadow: 2px 1px .5px 	rgb(119, 126, 85);
+        border-radius: 3px;
+        background-image: radial-gradient(circle at 50%-46%,#ceda95, #c1cc89);
+    }
+}
+
+@media (max-width: 375px) {
+    .searchSearchHolder{
+        width:150%;
+        flex-direction: column;
+        margin:0 auto 0 -25%; 
+        justify-content: center;
+        height:10vh;
+    }
+    .ssButtonHolder{
+        display: flex;
+        flex-direction: row;
+        margin-top:2vh;
+        
+        margin-bottom: 3vh;
+        justify-content: space-around;
+    }
+    .searchInput{
+        width:90%;
+        margin: 0 0 0 17px;
+    }
+}

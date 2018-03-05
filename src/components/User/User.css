@@ -1,0 +1,167 @@
+.userProfilePic{
+    /* background-color: rgb(231, 134, 16); */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100px;
+    width:100px;
+    z-index: 1;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    border-radius:3px;
+    border-style: solid;
+    margin-right: 10px;
+}
+.userProfileText{
+    margin-top: auto;
+    margin-right: 2vw;
+    margin-bottom: auto;
+    line-height: 150%;
+}
+.userProfileHolder{
+    font-family: 'Playfair Display', serif;
+    width: 55%;
+    display: flex;
+    flex-direction: row-reverse;
+    height: 14vh;
+    justify-content: flex-start;
+    /* background-color: #aebbc7; */
+    margin: auto 0px auto 0;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+.userText{
+    font-family: 'Playfair Display', serif;
+    margin-top:2vh;
+    margin-bottom: 2vh; 
+    font-size: 1.2em;
+}
+.userSaved{
+    height:250px;
+    /* background-color: blueviolet; */
+    width: 106%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll; 
+    margin-left: -3%;
+}
+.userFaved{
+    height:250px;
+    /* background-color: rgb(5, 81, 222); */
+    width: 106%;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll; 
+    margin-left: -3%;
+}
+.editButton{
+    /* background-color: aqua; */
+    height: 3vh;
+    width: 50px;
+    text-align: center;
+    margin: auto 0 auto 20px;
+    font-family: 'Playfair Display', serif;
+    box-shadow:  2px 1px .5px 	rgb(130, 109, 103);
+    background-image: radial-gradient(circle at 50%-46%,#f2cbc0, #eac3b8);
+    border-radius: 2px;
+    border-width: 1px;
+    border-radius:3px;
+    border-style: solid;
+    font-size: .8rem;
+}
+.loginButton1{
+    width: 100px;
+    height: 25px;
+    background-color:#c1cc89;
+    font-family: 'Playfair Display', serif;
+    font-size: 1rem;
+    border-width: 1px;
+    border-color: black;
+    margin:5vh auto 0 auto;
+    box-shadow: 1px 2px .5px 	rgb(119, 126, 85);
+    justify-content: center;
+    display: flex;
+    border-radius:10px;
+    background-image: radial-gradient(circle at 50%-46%,#ceda95, #c1cc89);
+    border-style: solid;
+}
+.loginHolder{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin-top:5vh;
+}
+@media (min-width: 350px) {
+    .userProfilePic{
+        height:10vh;
+        width:16vw;
+        margin-right: 0px;
+    }
+    .userProfileHolder{
+        height: 10vh;
+        width:100%;
+        /* background-color: coral; */
+        padding: 5px;
+        margin: 0 auto 0 auto;
+    }
+    .userProfileText{
+        font-size: 1rem;
+    }
+    .userText{
+        font-size: 1.2rem;
+    }
+}
+@media (min-width: 640px) {
+    .userProfilePic{
+        height:22vh;
+        width:18vw;
+        margin-right: 0px;
+    }
+    .userProfileHolder{
+        height: 22vh;
+        width:100%;
+        /* background-color: coral; */
+        padding: 5px;
+        margin: 0 auto 3vh auto;
+    }
+    .userProfileText{
+        font-size: 1rem;
+    }
+    .userText{
+        font-size: 1.2rem;
+    }
+    .userSaved{
+        width:120%;
+        /* background-color: cadetblue; */
+        margin-left: -6vw;
+    }
+    .userFaved{
+        width:120%;
+        /* background-color: cadetblue; */
+        margin-left: -6vw;
+    }
+}
+@media (min-width: 768px) {
+    .userProfilePic{
+        height:125px;
+        width:125px;
+        margin-right: 0px;
+    }
+    .userProfileHolder{
+        height: 12vh;
+        width:100%;
+        /* background-color: coral; */
+        padding: 5px;
+        margin: 0 auto 3vh auto;
+    }
+    .userProfileText{
+        font-size: 1rem;
+    }
+    .userText{
+        font-size: 1.2rem;
+    }
+}
