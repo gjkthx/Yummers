@@ -76,7 +76,8 @@ app.get('/auth/callback', function (req, res, next) {
     next()
 }, passport.authenticate('auth0', {
     successRedirect: 
-        'http://localhost:3000/',
+        '/',
+        
         // `${process.env.LOCALHOST}`,
     failureRedirect: 
     'idhttp://localhost:3000/'
