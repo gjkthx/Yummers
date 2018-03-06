@@ -94,7 +94,7 @@ app.get('/auth/me', (req, res, next) => {
 app.get('/auth/logout', function (req, res) {
     req.logOut();
     // res.redirect(`${process.env.LOCALHOST}`)
-    res.redirect('http://localhost:3000/')
+    res.redirect('/')
 })
 // SEARCH PAGE
 // Trending Button
