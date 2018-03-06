@@ -80,7 +80,7 @@ app.get('/auth/callback', function (req, res, next) {
         
         // `${process.env.LOCALHOST}`,
     failureRedirect: 
-    'idhttp://localhost:3000/'
+    '/'
     // `id${process.env.LOCALHOST}`
 }))
 
