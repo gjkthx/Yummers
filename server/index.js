@@ -8,9 +8,9 @@ const express = require('express')
     , axios = require('axios');
 
 const { AUTH_DOMAIN, AUTH_CLIENT_ID, AUTH_CLIENT_SECRET, AUTH_CALLBACK_URL, CONNECTION_STRING, API_KEY } = process.env;
+app.use( express.static( `${__dirname}/../build` ) );
 
 const app = express();
-app.use( express.static( `${__dirname}/../build` ) );
 app.use(bodyParser.json());
 
 app.use(session({
@@ -91,8 +91,8 @@ app.get('/auth/me', (req, res, next) => {
 })
 app.get('/auth/logout', function (req, res) {
     req.logOut();
-    res.redirect(`${process.env.LOCALHOST}`)
-    // res.redirect('http://localhost:3000/')
+    // res.redirect(`${process.env.LOCALHOST}`)
+    res.redirect('http://localhost:3000/')
 })
 // SEARCH PAGE
 // Trending Button
