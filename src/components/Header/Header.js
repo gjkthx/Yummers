@@ -62,7 +62,7 @@ class Header extends Component {
                             </div>
                             :
                             <div className='logoutHeaderButton'>
-                                <a href='http://localhost:3001/auth/logout' style={{ textDecoration: 'none', color: 'black' }}>
+                                <a href='/auth/logout' style={{ textDecoration: 'none', color: 'black' }}>
                                     <div className='loginText' >LogOut</div>
                                 </a>
                             </div>

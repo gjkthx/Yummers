@@ -68,7 +68,7 @@ passport.deserializeUser((id, done) => {
 })
 
 app.get('/auth', (req, res, next) => {
-    console.log('test')
+    // console.log('test')
     next();
 }, passport.authenticate('auth0'))
 app.get('/auth/callback', function (req, res, next) {
@@ -102,7 +102,7 @@ app.get('/auth/logout', function (req, res) {
 // Search Button
 // If there is something to search for in the input
 app.get('/api/search/:sortby/:searchq', function (req, res) {
-    console.log(req.params)
+    // console.log(req.params)
     axios.get(`http://food2fork.com/api/search?key=${process.env.REACT_APP_API_KEY}&sort=${req.params.sortby}&q=${req.params.searchq}`)
         .then(function (response) {
             // console.log(response.data.recipes)
@@ -167,7 +167,7 @@ app.get('/api/searchyPrev/:sortby/:page', function (req, res) {
 app.get('/api/getrecipe/:id', function (req, res) {
     axios.get(`http://food2fork.com/api/get?key=${process.env.REACT_APP_API_KEY}&rId=${req.params.id}`)
         .then(function (response) {
-            console.log(response.data.recipe)
+            // console.log(response.data.recipe)
             res.status(200).send(response.data.recipe)
         }).catch(error => {
             console.log(error)
@@ -179,7 +179,7 @@ app.get('/api/getsaved/:userId', function (req, res, next) {
     db.get_saved_recipes(
         req.params.userId
     ).then(response => {
-        console.log('get saved worked')
+        // console.log('get saved worked')
         res.status(200).send(response)
     }).catch(error => {
         console.log('get saved error', error)
@@ -191,7 +191,7 @@ app.get('/api/getfavorite/:userId', function (req, res, next) {
     db.get_favorite_recipes([
         req.params.userId
     ]).then(response => {
-        console.log('get faved worked')
+        // console.log('get faved worked')
         res.status(200).send(response)
     }).catch(error => {
         console.log('get favorite error', error)
@@ -233,7 +233,7 @@ app.delete(`/api/removeFaved/:userId/:recipeId`, function (req, res, next) {
         req.params.userId,
         req.params.recipeId
     ]).then((response) => {
-        console.log('removed Faved should work')
+        // console.log('removed Faved should work')
         res.sendStatus(200)
     })
 })
@@ -243,7 +243,7 @@ app.delete(`/api/removeSaved/:userId/:recipeId`, function (req, res, next) {
         req.params.userId,
         req.params.recipeId
     ]).then((response) => {
-        console.log('removed saved should work')
+        // console.log('removed saved should work')
         res.sendStatus(200)
     })
 })
