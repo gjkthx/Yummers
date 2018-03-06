@@ -8,9 +8,11 @@ const express = require('express')
     , axios = require('axios');
 
 const { AUTH_DOMAIN, AUTH_CLIENT_ID, AUTH_CLIENT_SECRET, AUTH_CALLBACK_URL, CONNECTION_STRING, API_KEY } = process.env;
-app.use( express.static( `${__dirname}/../build` ) );
 
 const app = express();
+
+app.use( express.static( `${__dirname}/../build` ) );
+
 app.use(bodyParser.json());
 
 app.use(session({
